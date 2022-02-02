@@ -513,6 +513,10 @@ footer span{
         font-size: 1.3rem;
     }
 
+    .home{
+        height: 560px;
+    }
+
     .home .info-home{
         padding: 0 1.5rem;
     }
