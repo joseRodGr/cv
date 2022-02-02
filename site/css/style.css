@@ -177,7 +177,24 @@ section .section-container{
     margin: 0 auto;
     padding: 0 5rem;
     text-align: center;
+}
 
+.home .read-more{
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    transition: all .3s linear;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home .read-more:hover{
+    transform: translateY(-10px);
+}
+
+.home .read-more i{
+    font-size: 1.5rem;
+    color: var(--reverse-color);
 }
 
 .btn{
@@ -327,8 +344,6 @@ section .section-container{
 .portfolio .box-container .box .info{
     position: absolute;
     top: -100%; left: 0;
-    /* background: #2ECC71cc; */
-    /* background: var(--letter-color); */
     background: #4449;
     color: var(--reverse-color);
     width: 100%;
@@ -411,7 +426,7 @@ form .input-box::placeholder{
 }
 
 form .input-box:focus{
-    border: 3px solid var(--bar-color);
+    border: 1px solid var(--bar-color);
 }
 
 form .message{
