@@ -181,7 +181,7 @@ section .section-container{
 
 .home .read-more{
     position: absolute;
-    bottom: 5%;
+    bottom: 12%;
     text-align: center;
     transition: all .3s linear;
     cursor: pointer;
@@ -529,7 +529,7 @@ footer span{
     }
 
     .home{
-        height: 560px;
+        height: 570px;
     }
 
     .home .info-home{
