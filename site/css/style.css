@@ -1,0 +1,588 @@
+:root{
+    --main-color: rgb(21, 58, 112);
+    --reverse-color: #fff;
+    --letter-color: #444a;
+    --bar-color: #2ECC71;
+    --shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin-top: 60px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;   
+    left: 0; 
+    background: var(--main-color);
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+/* Here start navbar */
+
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.nav-link{
+    text-decoration: none;
+    line-height: 60px;
+    color: var(--reverse-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.logo{
+    transition: color .3s linear;
+}
+
+.logo:hover{
+    color: var(--bar-color);
+}
+
+.navbar .nav-menu{
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-menu .nav-item{
+    margin: 0 .5rem;
+    width: max-content;
+   
+}
+
+.nav-menu .nav-item .nav-link{
+    padding: .3rem .8rem;
+    border-radius: 2rem;
+    transition: all .3s linear;
+}
+
+.nav-menu .nav-item .nav-link:hover{
+    background: var(--reverse-color);
+    color: var(--main-color);
+}
+
+.navbar .nav-toggle{
+    font-size: 1.5rem;
+    background: none;
+    color: var(--reverse-color);
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+/* Here ends nav bar */
+
+/* scroll starts */
+header .scroll-bar{
+    position: absolute;
+    top: 100%; left: 0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: .5rem;
+    background: var(--bar-color);
+    width: 0;
+    transition: width .1s linear;
+    /* border-radius: 0 20px 20px 0; */
+}
+
+/* scroll ends */
+
+
+section{
+    scroll-margin-top: 60px;
+    padding: 40px 20px;
+}
+
+section:nth-child(even){
+    background: #eee;
+}
+
+section .section-container{
+    max-width: 1200px;
+    margin: 0 auto;   
+}
+
+.section-container .cv-header{
+    margin-bottom: 1.5rem;
+}
+
+.section-container .cv-header h2{
+    color: var(--main-color);
+}
+
+.section-container .cv-header span{
+    border-bottom: 5px solid var(--bar-color);
+    border-radius: 5px;
+}
+
+
+.home{
+    position: relative;
+    height: 700px;
+    scroll-margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h3{
+    font-size: 1.5rem;
+    color: var(--reverse-color);
+}
+
+.home h1{
+    font-size: 3rem;
+    color: var(--reverse-color);
+}
+
+.home h1 span{
+    color: var(--bar-color);
+}
+
+.home p{
+    font-size: 1.2rem;
+    color: #eee;
+}
+
+.home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* filter: blur(.5rem); */
+
+}
+
+.home .info-home{
+    position: absolute;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    text-align: center;
+
+}
+
+.btn{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: .5rem 1.5rem;
+    border-radius: 5rem;
+    background: var(--main-color);
+    color: var(--reverse-color);
+    border: 1px solid var(--reverse-color);
+    cursor: pointer; 
+    margin-top: 1rem;
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    background: var(--reverse-color);
+    color: var(--main-color);
+    /* #154360  */
+}
+
+/* Section about me */
+.about-content{
+    padding: 0 .5rem;
+}
+
+.about-content .about-description{
+    margin: 1.5rem 0;
+    text-align: justify;
+    line-height: 2rem;
+    color: #444c;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.about-content .hobbies-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hobbies-container .hobbie{
+    text-align: center;
+    padding: .5rem .8rem;
+    margin-bottom: .5rem;
+}
+
+.hobbies-container .hobbie .hobbie-title{
+    margin-bottom: .5rem;
+    color: var(--bar-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.hobbies-container .hobbie img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 1rem;
+    border-bottom: 1px solid var(--main-color);
+    border-radius: 50%;
+
+}
+
+/* ends section about me */
+
+/* starts skills section */
+.skill-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill{
+    margin: 20px 10px;
+    text-align: center;
+    border-radius: 20px;
+    background: var(--reverse-color);
+    box-shadow: var(--shadow);
+    flex: 1 1 15rem;
+}
+
+.skill-tittle{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--reverse-color);
+    background: var(--main-color);
+    padding: .5rem;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.skill .learn{
+    background: var(--bar-color);
+}
+
+.skill-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 0;
+
+}
+
+.skill-item{
+   font-size: 20px;
+   font-weight: 500;
+   box-shadow: var(--shadow);
+   color: #444e;
+   border-radius: 42px;
+   padding: 0.5em 0.7em;
+   margin: 10px;
+   background: var(--reverse-color);
+}
+
+/*  */
+.portfolio .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio .box-container .box{
+    margin: .5rem;
+    height: 20rem;
+    flex: 1 1 20rem;
+    border-radius: .5rem;
+    /* border: .3rem solid var(--main-color); */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+.portfolio .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.portfolio .box-container .box .info{
+    position: absolute;
+    top: -100%; left: 0;
+    /* background: #2ECC71cc; */
+    /* background: var(--letter-color); */
+    background: #4449;
+    color: var(--reverse-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    transition: all .5s linear;
+}
+
+.portfolio .box-container .box:hover .info,
+.portfolio .box-container .box:focus .info
+{
+    top: 0;
+}
+
+.portfolio .box-container .box .info .icons{
+    margin-top: 1.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.portfolio .box-container .box .info .icons i{
+    color: var(--reverse-color);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+
+}
+
+.box .technologies{
+    height: 60px;
+    background: var(--main-color);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 4px solid var(--reverse-color);
+}
+
+.box .technologies i{
+    color: var(--reverse-color);
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+
+.form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .3rem;
+    /* background: #2ECC71; */
+}
+
+.contact form{
+    max-width: 1000px;
+    margin: 0 auto;
+    /* flex: 1 1 45rem; */
+}
+
+form .input-box{
+    width: 100%;
+    margin: .5rem 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    color: #444c;
+    font-weight: 500;
+}
+
+form .input-box::placeholder{
+    filter:opacity(.6)
+}
+
+form .input-box:focus{
+    border: 3px solid var(--bar-color);
+}
+
+.btn-contact:hover{
+    background: var(--bar-color);
+    /* color: var(--reverse-color); */
+}
+
+footer{
+    padding: 1.6rem;
+    background: var(--reverse-color);
+    text-align: center;
+}
+
+footer p{
+    font-size: 1.3rem;
+    color: #666;
+}
+
+footer span{
+    color: var(--bar-color);
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+
+    
+    .navbar .nav-menu{
+        position: absolute;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        background:rgb(39, 90, 167);
+        height: calc(100vh - 60px);
+        padding-top: 20px;
+        opacity: 0;
+        pointer-events: none;
+        overflow-y: auto;
+        box-shadow: var(--shadow);    
+    }
+
+    .nav-link{
+        font-size: 1.3rem;
+    }
+    
+    .navbar .nav-menu .nav-item{
+        
+        padding: .5rem 0;
+       
+    }
+    
+    .nav-menu .nav-item .nav-link{
+        font-weight: 400;
+        transition: all .1s linear;
+    }
+    
+    .nav-menu .nav-item .nav-link:hover,
+    .nav-menu .nav-item .nav-link:focus
+    {
+        background: none;
+        color: var(--reverse-color);
+        border-bottom: 5px solid var(--bar-color);
+    }
+    
+    .navbar .nav-toggle{
+
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .navbar .active-control{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .section-container .cv-header h2{
+        font-size: 1.3rem;
+    }
+
+    .home .info-home{
+        padding: 0 1.5rem;
+    }
+
+    .home h3{
+        font-size: 1.2rem;
+    }
+    
+    .home h1{
+        font-size: 2.7rem;
+    }
+    
+    .home p{
+        font-size: 1.1rem;
+    }
+
+    .home .info-home{
+        padding: 0 20px;
+        /* text-align: center; */
+    
+    }
+    
+    .btn{
+        font-size: 1.2rem;
+    }
+
+    .about-content .about-description{
+        font-size: 1.1rem;
+    }  
+    
+    .hobbies-container .hobbie .hobbie-title{
+        font-size: 1rem;
+    }
+    
+    .hobbies-container .hobbie img{
+        width: 180px;
+        height: 180px;
+    }
+    
+    .skill{
+        margin: 20px 8px;
+    }
+    
+    .skill-tittle{
+        font-size: 1.2rem;
+    }
+    
+    
+    .skill-item{
+       font-size: 18px;
+    }
+    
+    
+    
+    .portfolio .box-container .box .info{
+        font-size: 1.3rem;
+    }
+
+    .box .technologies{
+        height: 55px;
+    }
+    
+    .box .technologies i{
+        font-size: 1.8rem;
+        padding: 0 1rem;
+    
+    }
+
+    form .input-box{
+        font-size: 1.1rem;
+    }
+    
+    footer p{
+        font-size: 1.1rem;
+    }
+    
+ }
+
