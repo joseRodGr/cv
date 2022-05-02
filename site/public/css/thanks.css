@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     padding: 2rem;
     margin-top: 5rem;
