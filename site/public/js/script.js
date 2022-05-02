@@ -40,18 +40,18 @@ const subjectInput = document.querySelector('.subject');
 const messageInput = document.querySelector('.message');
 
 
-form.addEventListener('submit', (e) => {
+// form.addEventListener('submit', (e) => {
 
-    if(!validateInputs()){
-        e.preventDefault();
-    }else{
-        nameInput.value = null
-        emailInput.value = null
-        subjectInput.value = null
-        messageInput.value = null
-    }
+//     if(!validateInputs()){
+//         e.preventDefault();
+//     }else{
+//         nameInput.value = null
+//         emailInput.value = null
+//         subjectInput.value = null
+//         messageInput.value = null
+//     }
 
-})
+// })
 
 
 const validateInputs = () => {
