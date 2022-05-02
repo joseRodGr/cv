@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portafolio</title>
+    <title>CV</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/37d22d08fc.js" crossorigin="anonymous"></script>
-    <script defer src="js/script.js"></script>
+    <!-- <script defer src="js/script.js"></script> -->
 </head>
 <body>
     <header>
@@ -33,7 +33,7 @@
                 <h3>HI THERE!</h3>
                 <h1>I'M <span>Jose Rodríguez</span></h1>
                 <p>Full Stack Web Developer</p>
-                <button class="btn">Download CV</button>
+                <a href="CV_JoseDRodriguezG.pdf" download="CV_JoseRodriguezG.pdf"><button class="btn">Download CV</button></a> 
             </div>
             <a class="read-more" href="#aboutme">
                 <i class="fas fa-chevron-down"></i>
@@ -170,7 +170,6 @@
                                     </ul>
                                 </div>
                                 <div class="icons">
-                                    <!-- <a href=""><i class="fas fa-link"></i></a> -->
                                     <a href="https://github.com/joseRodGr/QuestionsApp" target="_blank" title="Github repository"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
@@ -192,14 +191,11 @@
                                     </ul>
                                 </div>
                                 <div class="icons">
-                                    <!-- <a href=""><i class="fas fa-link"></i></a> -->
                                     <a href="https://github.com/joseRodGr/InventoryMVC" target="_blank" title="Github repository"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
 
                 </div>
             </section>
@@ -210,15 +206,32 @@
                     </div>
                 </div>
                 <div class="form-section">
-                    <form action="" autocomplete="off">
-                        <input class="input-box" type="text" placeholder="name" name="name" required>
-                        <input class="input-box" type="text" placeholder="email" name="email" autocomplete="on" required>
-                        <input class="input-box" type="text" placeholder="subject" name="subject">
-                        <textarea class="input-box message" name="" cols="30" rows="10" placeholder="message" name="message" required></textarea>
+                    <form class="form" action="https://formsubmit.co/77c3e978861d59e56be27c605f4f06ee" method="POST" autocomplete="off">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input class="input-box name" type="text" name="name" required>
+                            <span class="error-hint"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input class="input-box email" type="email" name="email" required>
+                            <span class="error-hint"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject <span>(optional)</span></label>
+                            <input class="input-box subject" type="text" name="subject">
+                            <span class="error-hint"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="input-box message" cols="30" rows="10" name="message" required></textarea>
+                            <span class="error-hint"></span>
+                        </div>
+                        <input type="hidden" name="_subject" value="New message from your website">
+                        <input type="hidden" name="_next" value="https://josedrgdev.web.app/thanks.html">
                         <button type="submit" class="btn btn-contact">Send <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
-
             </section>
         </div>
     </div>

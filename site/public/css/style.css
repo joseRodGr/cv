@@ -418,33 +418,60 @@ section .section-container{
 }
 
 .contact form{
-    max-width: 800px;
-    margin: 0 auto;
-    /* flex: 1 1 45rem; */
+    width: 700px;
+    /* padding: 1rem 2rem; */
 }
 
-form .input-box{
+form .form-group{
+    margin-bottom: 1rem;
+}
+
+form .form-group label{
+    font-size: 1.2rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.form-group label span{
+    color: rgba(21, 58, 112, .5);
+    font-weight: 500;
+}
+
+form .form-group .input-box{
     width: 100%;
-    margin: .5rem 0;
+    /* margin: .5rem 0; */
+    margin-top: .2rem;
+    margin-bottom: .2rem;
     padding: 1rem;
     font-size: 1.2rem;
     outline: none;
     border: none;
     color: #444c;
+    border-radius: 5px;
     font-weight: 500;
 }
 
-form .input-box::placeholder{
-    filter:opacity(.6)
+form .form-group .error-hint{
+    color: rgb(222, 43, 43);
+    font-weight: 500;
+    
 }
+
+/* form .input-box::placeholder{
+    filter:opacity(.6)
+} */
 
 form .input-box:focus{
     border: 1px solid var(--bar-color);
 }
 
 form .message{
-    height: 13rem;
+    height: 10rem;
     resize: none;
+}
+
+.btn-contact{
+    margin-top: 0;
 }
 
 .btn-contact:hover{
@@ -604,8 +631,11 @@ footer span{
 
     form .input-box{
         font-size: 1.1rem;
+        /* padding: .5rem; */
     }
     
+    
+
     footer p{
         font-size: 1.1rem;
     }
