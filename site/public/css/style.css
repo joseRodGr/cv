@@ -325,7 +325,7 @@ section .section-container{
 .portfolio .box-container .box{
     margin: .5rem;
     height: 20rem;
-    flex: 1 1 20rem;
+    flex: 1 1 25rem;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     overflow: hidden;
